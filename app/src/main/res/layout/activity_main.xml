@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="com.example.idp100.real.MainActivity"
+   >
+
+   <ImageView
+       android:id="@+id/splash"
+       android:layout_width="407dp"
+       android:layout_height="match_parent"
+       android:background="#4ED4DE"
+       app:layout_constraintTop_toBottomOf="parent"
+       tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="333dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="112dp"
+        android:text="Teaching Aids"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FFF"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:lineSpacingExtra="9dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="It's time to start living the life we've imagined"
+        android:textColor="#FFF"
+        android:layout_marginLeft="20dp"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:layout_marginTop="56dp"
+        />
+
+    <TextView
+        android:id="@+id/btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:lineSpacingExtra="8dp"
+        android:text="Get Started"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+       />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

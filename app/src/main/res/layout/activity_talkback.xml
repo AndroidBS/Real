@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/voiceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/btnSpeakContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#6fb7d6"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:weightSum="1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/microphone1"
+            android:padding="16dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="0.14" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSpeak"
+            android:layout_margin="10dp"
+            android:text="hint"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/voice"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="50dp"
+            android:text="Talk To Your Robots"
+            android:textSize="19dp"
+            android:textColor="#4b79a1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:weightSum="1"
+        android:layout_above="@+id/btnSpeakContainer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/voice1"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginLeft="50dp"
+            android:text="Let's say left! \nLet's say back! \nLet's say forward! \nLet's say stop! \nLet's say right! \n"
+            android:textSize="19sp"
+            android:textColor="#4b79a1" />
+    </LinearLayout>
+
+
+</RelativeLayout>

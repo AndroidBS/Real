@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/color"
+    tools:context="com.example.idp100.real.Music">
+
+  <LinearLayout
+      android:layout_gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:weightSum="1">
+
+  </LinearLayout>
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Start"
+        android:layout_marginLeft="43dp"
+        android:id="@+id/btnstart"
+        android:background="@drawable/oval"
+        android:layout_marginStart="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="100dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Stop"
+        android:layout_marginLeft="180dp"
+        android:id="@+id/btnstop"
+        android:background="@drawable/oval"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="100dp" />
+
+    <RelativeLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+      <Button
+          android:layout_width="70dp"
+          android:layout_height="50dp"
+          android:background="#087f83"
+          android:text="Slow"
+          android:layout_marginLeft="40dp"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_marginTop="280dp"
+          android:id="@+id/btn1"/>
+
+      <Button
+          android:layout_width="70dp"
+          android:layout_height="50dp"
+          android:background="#087f83"
+          android:text="Normal"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_marginLeft="130dp"
+          android:layout_marginTop="280dp"
+          android:id="@+id/btn2"/>
+
+      <Button
+          android:layout_width="70dp"
+          android:layout_height="50dp"
+          android:background="#087f83"
+          android:text="Fast"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_marginTop="280dp"
+          android:layout_marginLeft="220dp"
+          android:id="@+id/btn3"/>
+
+        <ImageView
+            android:layout_width="329dp"
+            android:layout_height="179dp"
+            android:id="@+id/txt"
+            android:background="@drawable/linefollower"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
