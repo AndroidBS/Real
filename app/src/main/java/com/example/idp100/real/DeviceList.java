@@ -23,7 +23,7 @@ public class DeviceList extends AppCompatActivity {
     //widgets
     Button btnPaired;
     ListView devicelist;
-    //Bluetooth
+
     private BluetoothAdapter myBluetooth = null;
     private Set<BluetoothDevice> pairedDevices;
     public static String EXTRA_ADDRESS = "device_address";

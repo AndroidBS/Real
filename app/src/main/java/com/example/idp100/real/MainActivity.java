@@ -15,14 +15,15 @@ public class MainActivity extends AppCompatActivity {
     ImageView img;
     Animation fhelper,fleft,smalltobig;
 
-    String Device_ID="A3:1A:00:C2:05:B5";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        MyApplication.getInstance().setupBluetoothConnection();
+        MyApplication.getInstance().getCurrentBluetoothConnection();
 
         smalltobig = AnimationUtils.loadAnimation(this, R.anim.smalltobig);
         fleft = AnimationUtils.loadAnimation( this, R.anim.fleft);
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent ax = new Intent(MainActivity.this,Main2Activity.class);
                 startActivity(ax);
                 overridePendingTransition(R.anim.fleft,R.anim.fhelper);
-                //startService(new Intent(MainActivity.this, MyService.class));
+
 
 
 

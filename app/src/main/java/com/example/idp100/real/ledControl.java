@@ -201,9 +201,9 @@ public class ledControl extends AppCompatActivity {
                 if (btSocket == null || !isBtConnected)
                 {
                     myBluetooth = BluetoothAdapter.getDefaultAdapter();//get the mobile bluetooth device
-                    BluetoothDevice dispositivo = myBluetooth.getRemoteDevice(address);//connects to the device's address and checks if it's available
-                    btSocket = dispositivo.createInsecureRfcommSocketToServiceRecord(myUUID);//create a RFCOMM (SPP) connection
-                    BluetoothAdapter.getDefaultAdapter().cancelDiscovery();
+                    BluetoothDevice dis = myBluetooth.getRemoteDevice(address);//connects to the device's address and checks if it's available
+                    btSocket = dis.createInsecureRfcommSocketToServiceRecord(myUUID);//create a RFCOMM (SPP) connection
+                   BluetoothAdapter.getDefaultAdapter().cancelDiscovery();
                     btSocket.connect();//start connection
                 }
             }
@@ -225,6 +225,7 @@ public class ledControl extends AppCompatActivity {
             }
             else
             {
+
                 msg("Connected.");
                 isBtConnected = true;
             }

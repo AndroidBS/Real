@@ -23,6 +23,9 @@ public class Voice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_voice);
 
+        MyApplication.getInstance().setupBluetoothConnection();
+        MyApplication.getInstance().getCurrentBluetoothConnection();
+
         mVoiceInputTv = (TextView) findViewById(R.id.voiceInput);
         mSpeakBtn = (ImageButton) findViewById(R.id.btnSpeak);
         mSpeakBtn.setOnClickListener(new View.OnClickListener() {

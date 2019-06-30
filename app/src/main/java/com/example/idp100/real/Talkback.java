@@ -22,6 +22,9 @@ public class Talkback extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_talkback);
 
+        MyApplication.getInstance().setupBluetoothConnection();
+        MyApplication.getInstance().getCurrentBluetoothConnection();
+
         mVoiceInputTv = (TextView) findViewById(R.id.voiceInput);
         mSpeakBtn = (ImageButton) findViewById(R.id.btnSpeak);
         mSpeakBtn.setOnClickListener(new View.OnClickListener() {

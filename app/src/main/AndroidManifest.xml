@@ -13,7 +13,8 @@
         android:icon="@mipmap/ic_launcher_robot"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name="com.example.idp100.real.MyApplication">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +27,6 @@
         <activity android:name=".Manual" />
         <activity android:name=".Music" />
         <activity android:name=".Auto" />
-        <activity android:name=".Bluetooth" />
         <activity android:name=".Voice" />
         <activity android:name=".Voi_Top" />
         <activity android:name=".MusicPlayer" />
@@ -34,19 +34,7 @@
         <activity android:name=".DeviceList" />
         <activity android:name=".ledControl" />
 
-        <service
-            android:name=".MyService"
-            android:enabled="true"
-            android:exported="true" />
-        <service
-            android:name=".BluetoothServices"
-            android:enabled="true"
-            android:exported="true" />
 
-        <service
-            android:name=".StartService"
-            android:enabled="true"
-            android:exported="true" />
     </application>
 
 </manifest>

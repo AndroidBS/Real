@@ -16,6 +16,8 @@ public class Manual extends AppCompatActivity {
         setContentView(R.layout.activity_manual);
 
 
+        MyApplication.getInstance().setupBluetoothConnection();
+        MyApplication.getInstance().getCurrentBluetoothConnection();
 
 
 
@@ -23,4 +25,5 @@ public class Manual extends AppCompatActivity {
 
 
     }
+
 }

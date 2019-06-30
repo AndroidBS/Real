@@ -15,7 +15,7 @@ import static java.security.AccessController.getContext;
 
 public class Control extends AppCompatActivity {
     ImageView image,image1,image2;
-    private BluetoothAdapter myBluetooth = null;
+
 
 
     @Override
@@ -24,28 +24,8 @@ public class Control extends AppCompatActivity {
         setContentView(R.layout.activity_control);
 
 
-//        myBluetooth = BluetoothAdapter.getDefaultAdapter();
-//
-//
-//        if(myBluetooth == null)
-//        {
-//            //Show a mensag. that the device has no bluetooth adapter
-//            Toast.makeText(getApplicationContext(), "Bluetooth Device Not Available", Toast.LENGTH_LONG).show();
-//
-//            //finish apk
-//            finish();
-//        }
-//        else if(!myBluetooth.isEnabled())
-//        {
-//            //Ask to the user turn the bluetooth on
-//            Intent turnBTon = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-//
-//            startActivityForResult(turnBTon,1);
-//
-//
-//
-//        }
-
+        MyApplication.getInstance().setupBluetoothConnection();
+        MyApplication.getInstance().getCurrentBluetoothConnection();
 
         image =(ImageView)findViewById(R.id.control);
         image1 =(ImageView)findViewById(R.id.line);
